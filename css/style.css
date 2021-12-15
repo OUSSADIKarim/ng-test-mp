@@ -53,6 +53,12 @@ header {
     justify-content: space-evenly;
 }
 
+    .menu {
+        align-self: flex-start;
+        width: 25%;
+        display: none;
+    }
+
     .nav {
         width: 50%;
         margin-top: 7.5em;
@@ -93,7 +99,7 @@ header {
                         top: 1.4em;
                         left: 0.6em;
                         opacity: 0;
-                        transition: opacity ease-in-out 1s;
+                        transition: opacity ease-in-out 0.6s;
                     }
 
                     .links_container_list a:hover::after,
@@ -284,9 +290,9 @@ main {
                 margin-top: 1rem;
             }
 
-                #Delivery_truck {
-                    /* position: relative; */
-                }
+                /* #Delivery_truck {
+                    position: relative;
+                } */
 
             	#Path_5 {
                     fill: rgba(223,185,51,1);
@@ -514,7 +520,7 @@ main {
                     transform: matrix(1,0,0,1,0,0);
                 }
                 #Path_14 {
-                    fill: rgba(223,185,51,1);
+                    fill: rgb(223, 185, 51);
                 }
                 .Path_14 {
                     overflow: visible;
@@ -539,11 +545,6 @@ main {
                 }
 
 
-
-
-
-
-
     .right {
         width: 40%;
         height: auto;
@@ -555,3 +556,82 @@ main {
             height: auto;
         }
 
+
+
+@media (max-width: 700px) {
+    header {
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        place-self: center;
+    }
+
+    .logo_container {
+        width: 25%;
+    }
+
+    main {
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+
+    .main-img {
+        transform: translate3d(0, 0, 0);
+        width: 100%;
+        margin-left: 1.1rem;
+    }
+
+    .why {
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+
+    .gallery {
+        margin-top: 2.5rem;
+    }
+
+    .why p {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .second_section {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .left {
+        width: 100%;
+    }
+    
+    .at-home {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .at-home h2::before {
+        left: -45px;
+        width: 150%;
+    }
+
+    .services_icons {
+        flex-direction: column;
+    }
+
+    .services_img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
