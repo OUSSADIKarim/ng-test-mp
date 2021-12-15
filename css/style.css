@@ -62,6 +62,9 @@ header {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+
+            width: 80%;
+            margin: 0 auto;
         }
 
             .links_container_list {
@@ -73,6 +76,12 @@ header {
                     font-size: clamp(1.6rem, -0.875rem + 3.333vw, 2.5rem);
                     color: var(--clr-primary);
                     position: relative;
+                }
+
+                .links_container_list a:hover,
+                .links_container_list a:active,
+                .links_container_list a:focus-visible {
+                    color: var(--clr-quaternary);
                 }
 
                     .links_container_list a::after {
@@ -120,7 +129,7 @@ main {
 }
 
     .main-img {
-        transform: translateY(-15%);
+        transform: translate3d(3%, -20%, 0);
         object-fit: cover; 
         place-self: center;
         width: 50%;
@@ -135,13 +144,11 @@ main {
 
         .why h2 {
             font-weight: var(--fw-bold);
-            /* font-size: 4.7rem; */
             font-size: clamp(1.6rem, -0.875rem + 5.333vw, 4.5rem);
 
         }
 
         .why p {
-            /* font-size: 1.8rem; */
             font-size: clamp(1.4rem, -0.875rem + 3.333vw, 1.8rem);
             width: 45%;
             margin: 0 auto;
@@ -152,7 +159,7 @@ main {
         }
 
             .gallery p {
-                font-size: 7.2rem;
+                font-size: clamp(2.4rem, -0.875rem + 4.333vw, 5.8rem);
                 color: var(--clr-quaternary);
             }
 
@@ -161,3 +168,390 @@ main {
                     background-color: var(--clr-quaternary);
                     padding: 1rem 1.5rem;
                 }
+
+.second_section {
+    max-width: 1900px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+    .left {
+        width: 50%;
+    }
+
+        .at-home {
+            padding-top: 5.5rem;
+            padding-left: 5rem;
+        }
+
+            .at-home h2 {
+                font-size: clamp(1.6rem, -0.875rem + 3.333vw, 3rem);
+                color: var(--clr-secondary);
+                position: relative;
+            }
+
+            .at-home h2::before {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.34);
+                position: absolute;
+                top: 2em;
+            }
+
+            .at-home p {
+                font-size: clamp(1.3rem, -0.875rem + 3.333vw, 1.8rem);
+                width: 60%;
+                margin-top: 5rem;
+            }
+        .services_icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5rem auto;
+        }
+
+        .services_icons p {
+            font-size: clamp(1.3rem, -0.875rem + 3.333vw, 1.8rem);
+            font-weight: var(--fw-extra-bold);
+        }
+
+            .designs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #ID3d {
+                    position: relative;
+                    width: fit-content;
+                    height: auto;
+                }
+
+                #Path_1,#Path_2,#Path_3, #Path_4 {
+                    fill: rgba(223,185,51,1);
+                }
+
+                .Path_1 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: 81.575px;
+                    top: 81.495px;
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                }
+
+                .Path_2 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: 58.677px;
+                    top: 37.686px;
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                }
+
+                .Path_3 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: 35.778px;
+                    top: 81.495px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+
+                .Path_4 {
+                    overflow: visible;
+                    width: 137.354px;
+                    height: 129.756px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+
+            .delivery {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                text-align: center;
+            }
+
+            .delivery p {
+                margin-top: 1rem;
+            }
+
+                #Delivery_truck {
+                    /* position: relative; */
+                }
+
+            	#Path_5 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_5 {
+                    overflow: visible;
+                    width: 143.147px;
+                    height: 87.949px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+
+            .office_furniture {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                text-align: center;
+            }
+
+            .office_furniture p {
+                margin-top: 2rem;
+            }
+
+                #Desk {
+                    position: relative;
+                }
+                #Group_2 {
+                    width: 127.312px;
+                    height: 79.571px;
+                    overflow: visible;
+                }
+                #Group_1 {
+                    position: absolute;
+                    width: 127.312px;
+                    height: 79.571px;
+                    left: 0px;
+                    top: 0px;
+                    overflow: visible;
+                }
+                #Rectangle_2 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Rectangle_2 {
+                    position: absolute;
+                    overflow: visible;
+                    width: 3.979px;
+                    height: 9.947px;
+                    left: 33.817px;
+                    top: 35.807px;
+                }
+                #Path_6 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_6 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 127.312px;
+                    height: 79.571px;
+                    left: 0px;
+                    top: 0px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Rectangle_3 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Rectangle_3 {
+                    position: absolute;
+                    overflow: visible;
+                    width: 9.946px;
+                    height: 3.978px;
+                    left: 97.474px;
+                    top: 19.892px;
+                }
+                #Rectangle_4 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Rectangle_4 {
+                    position: absolute;
+                    overflow: visible;
+                    width: 9.946px;
+                    height: 3.978px;
+                    left: 97.474px;
+                    top: 37.796px;
+                }
+                #Rectangle_5 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Rectangle_5 {
+                    position: absolute;
+                    overflow: visible;
+                    width: 9.946px;
+                    height: 3.978px;
+                    left: 97.474px;
+                    top: 55.699px;
+                }
+
+            .home_furniture {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                text-align: center;
+            }
+
+            .home_furniture p {
+                margin-top: 1rem;
+            }
+
+                #Sofa_icn {
+                    position: relative;
+                }
+                #Group_3 {
+                    position: absolute;
+                    width: 13.013px;
+                    height: 13.013px;
+                    left: 7.89px;
+                    top: 25.293px;
+                    overflow: visible;
+                }
+                #Path_7 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_7 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 13.013px;
+                    height: 13.013px;
+                    left: 0px;
+                    top: 0px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Group_5 {
+                    width: 151.459px;
+                    height: 88.815px;
+                    overflow: visible;
+                }
+                #Group_4 {
+                    position: absolute;
+                    width: 13.013px;
+                    height: 13.013px;
+                    left: 130.555px;
+                    top: 25.293px;
+                    overflow: visible;
+                }
+                #Path_8 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_8 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 13.013px;
+                    height: 13.013px;
+                    left: 0px;
+                    top: 0px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Path_9 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_9 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 151.459px;
+                    height: 88.815px;
+                    left: 0px;
+                    top: 0px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Group_6 {
+                    position: absolute;
+                    width: 64.863px;
+                    height: 24.06px;
+                    left: 43.298px;
+                    top: 13.023px;
+                    overflow: visible;
+                }
+                #Path_10 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_10 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 7.409px;
+                    height: 7.408px;
+                    left: 0px;
+                    top: 0px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Path_11 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_11 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 7.409px;
+                    height: 7.408px;
+                    left: 0px;
+                    top: 16.651px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Path_12 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_12 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 7.409px;
+                    height: 7.408px;
+                    left: 57.454px;
+                    top: 0px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Path_13 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_13 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 7.409px;
+                    height: 7.408px;
+                    left: 57.454px;
+                    top: 16.651px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Path_14 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_14 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 7.408px;
+                    height: 7.409px;
+                    left: 28.727px;
+                    top: 0px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                #Path_15 {
+                    fill: rgba(223,185,51,1);
+                }
+                .Path_15 {
+                    overflow: visible;
+                    position: absolute;
+                    width: 7.408px;
+                    height: 7.408px;
+                    left: 28.727px;
+                    top: 16.651px;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+
+
+
+
+
+
+
+    .right {
+        width: 40%;
+        height: auto;
+        text-align: center;
+    }
+
+        .services_img {
+            max-width: 100%;
+            height: auto;
+        }
+
