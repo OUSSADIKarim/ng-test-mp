@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+:root {
+    /*font-family: */
+
+    --ff-primary: 'Lato', sans-serif;
+
+    /*font-weights:*/
+    --fw-light: 300;
+    --fw-light-italic: 300 italic;
+    --fw-regular: 400;
+    --fw-regular-italic: 400 italic;
+    --fw-medium: 500;
+    --fw-medium-italic: 500 italic;
+    --fw-semi-bold: 600;
+    --fw-semi-bold-italic: 600 italic;
+    --fw-bold: 700;
+    --fw-bold-italic: 700 italic;
+    --fw-extra-bold: 800;
+    --fw-extra-bold-italic: 800 italic;
+
+    /*colors:*/
+    --clr-primary: rgb(112, 112, 112);
+    --clr-secondary: rgb(223, 185, 51);
+    --clr-tertiary: rgb(249, 123, 8);
+    --clr-quaternary: rgba(137,80,88,1);
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    line-height: 1.6;
+    color: var(--clr-primary);
+}
+
+header {
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .nav {
+        width: 50%;
+        margin-top: 7.5em;
+    }
+
+        .links_container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+            .links_container_list {
+                list-style: none;
+            }
+
+                .links_container_list a {
+                    text-decoration: none;
+                    font-size: clamp(1.6rem, -0.875rem + 3.333vw, 2.5rem);
+                    color: var(--clr-primary);
+                    position: relative;
+                }
+
+                    .links_container_list a::after {
+                        content: "";
+                        width: 60%;
+                        height: 1.4px;
+                        background-color: var(--clr-quaternary);
+                        position: absolute;
+                        top: 1.4em;
+                        left: 0.6em;
+                        opacity: 0;
+                        transition: opacity ease-in-out 1s;
+                    }
+
+                    .links_container_list a:hover::after,
+                    .links_container_list a:focus-visible::after,
+                    .links_container_list a:active::after {
+                        color: var(--clr-quaternary);
+                        opacity: 1;
+                    }
+
+        .logo_container {
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .logo {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                border: solid 1.5px var(--clr-primary);
+                border-top: none;
+                margin: 0 auto;
+            }
+
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+    .main-img {
+        transform: translateY(-15%);
+        object-fit: cover; 
+        place-self: center;
+        width: 50%;
+        height: auto;
+    }
+
+    .why {
+        margin-top: 10em;
+        text-align: center;
+        width: 50%;
+    }
+
+        .why h2 {
+            font-weight: var(--fw-bold);
+            /* font-size: 4.7rem; */
+            font-size: clamp(1.6rem, -0.875rem + 5.333vw, 4.5rem);
+
+        }
+
+        .why p {
+            /* font-size: 1.8rem; */
+            font-size: clamp(1.4rem, -0.875rem + 3.333vw, 1.8rem);
+            width: 45%;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            margin-top: 10em;
+        }
+
+            .gallery p {
+                font-size: 7.2rem;
+                color: var(--clr-quaternary);
+            }
+
+                .gallery p span {
+                    color: white;
+                    background-color: var(--clr-quaternary);
+                    padding: 1rem 1.5rem;
+                }
