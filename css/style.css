@@ -699,3 +699,45 @@ main {
         width: 100%;
     }
 }
+
+@media (min-width: 700px) and (max-width: 1067px) {
+    .why {
+        margin-top: 2rem;
+    }
+
+    .main-img {
+        transform: translate3d(5%, 0%, 0);
+    }
+
+    .second_section {
+        margin-top: 5rem;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 1420px) {
+    .logo {
+        width: 40%;
+    }
+
+    .gallery {
+        margin-top: 2rem;
+    }
+
+    .why p {
+        width: 70%;
+    }
+
+    .second_section {
+        justify-content: space-around;
+    }
+
+    .services_icons {
+        transform: translate3d(45%, 0, 0);
+        gap: 5rem;
+    }
+
+    .at-home {
+        padding-left: 0;
+    }
+}
