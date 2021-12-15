@@ -57,6 +57,14 @@ header {
         align-self: flex-start;
         width: 25%;
         display: none;
+        cursor: pointer;
+    }
+
+    .close {
+        min-width: 25%; 
+        margin-bottom: 10rem; 
+        cursor: pointer;
+        display: none;
     }
 
     .nav {
@@ -68,7 +76,6 @@ header {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-
             width: 80%;
             margin: 0 auto;
         }
@@ -562,15 +569,72 @@ main {
     header {
         justify-content: space-evenly;
         max-width: 100%;
+        position: relative;
     }
 
     .nav {
         display: none;
+        background-color: white;
+        position: absolute;
+        top: -8rem;
+        padding: 2rem;
+        width: 100%;
+        min-height: 100%;
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .visible {
+        display: block;
+        display: flex;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .links_container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .links_container_list {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
     }
 
     .menu {
         display: block;
         place-self: center;
+    }
+
+    .menu path {
+        fill: var(--clr-secondary);
+        transition: fill ease-in-out 0.6s;
+    }
+
+    .menu:hover path, 
+    .menu:focus-visible path,
+    .menu:active path {
+        fill: var(--clr-quaternary);
+    }
+
+    .close {
+        display: block;
+    }
+
+    .close path {
+        fill: var(--clr-secondary);
+        transition: fill ease-in-out 0.6s;
+    }
+
+    .close:hover path,
+    .close:active path,
+    .close:focus-visible path {
+        fill: var(--clr-quaternary);
+
     }
 
     .logo_container {
