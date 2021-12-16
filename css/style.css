@@ -741,3 +741,258 @@ main {
         padding-left: 0;
     }
 }
+
+
+.contact {
+    padding: 0 2rem;
+}
+
+.contact_presentation {
+    width: 40%;
+    text-align: center;
+}
+
+.contact_presentation h2 {
+    font-size: clamp(1.6rem, -0.875rem + 5.333vw, 4.5rem);
+}
+
+.contact_presentation p {
+    font-size: clamp(1.4rem, -0.875rem + 3.333vw, 1.8rem);
+}
+
+#Location_BLK {
+    fill: rgba(250,121,1,1);
+}
+.Location_BLK {
+    overflow: visible;
+    width: 21px;
+    height: 28px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+#envelope-solid {
+    fill: rgba(250,121,1,1);
+}
+.envelope-solid {
+    overflow: visible;
+    width: 25.941px;
+    height: 19.456px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+#mobile-alt-solid {
+    fill: rgba(250,121,1,1);
+}
+.mobile-alt-solid {
+    overflow: visible;
+    width: 21px;
+    height: 33.6px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+#web-blk {
+    width: 25.941px;
+    height: 26px;
+    overflow: visible;
+}
+#Path_16 {
+    fill: rgba(250,121,1,1);
+}
+.Path_16 {
+    overflow: visible;
+    position: absolute;
+    width: 25.941px;
+    height: 4.4px;
+    top: 10.8px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Group_7 {
+    position: absolute;
+    width: 24.8px;
+    height: 26px;
+    top: 0px;
+    overflow: visible;
+}
+#Path_17 {
+    fill: rgba(250,121,1,1);
+}
+.Path_17 {
+    overflow: visible;
+    position: absolute;
+    width: 24.8px;
+    height: 9px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_18 {
+    fill: rgba(250,121,1,1);
+}
+.Path_18 {
+    overflow: visible;
+    position: absolute;
+    width: 24.8px;
+    height: 9px;
+    left: 0px;
+    top: 17px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_7 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_7 {
+    position: absolute;
+    overflow: visible;
+    width: 179px;
+    height: 273px;
+    left: 1350px;
+    top: -39px;
+}
+
+.contact_icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 5rem;
+    margin-left: 3rem;
+}
+
+.location, 
+.mail,
+.tel,
+.website {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.website {
+    position: relative;
+}
+
+.contact_form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 50%;
+}
+
+.contact_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact_form {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(1rem, -0.875rem + 2.333vw, 1.8rem);
+}
+
+.form {
+    width: 50%;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 10%;
+    margin-top: 7rem;
+}
+
+.form input,
+.form label {
+    font-size: clamp(1.4rem, -0.875rem + 3.333vw, 1.8rem);
+}
+
+.form input,
+.form textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.form label {
+    position: relative;
+    font-weight: var(--fw-bold);
+}
+
+.form label::before {
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: var(--clr-tertiary);
+    position: absolute;
+    top: 10rem;
+}
+
+.form input::placeholder {
+    color: var(--clr-primary);
+}
+
+.form input {
+    color: var(--clr-primary);
+}
+
+.form textarea {
+    width: 100%;
+    height: 10vw;
+}
+
+.form label[for="textarea"]::before {
+    top: 24rem;
+}
+
+
+.contact_body {
+    position: relative;
+    height: 150vh;
+}
+.contact_body::before {
+    content: "";
+    width: 50%;
+    height: 150vh;
+    background-color: var(--clr-primary);
+    opacity: 0.07;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media (max-width: 700px) {
+    .contact {
+        margin-top: 5rem;
+    }
+
+    .contact_presentation {
+        width: 100%;
+    }
+
+    .contact_form {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form label::before {
+        width: 100%;
+    }
+
+    .contact_form-right {
+        width: 100%;
+        margin-top: 15rem;
+    }
+}
