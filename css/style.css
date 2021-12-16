@@ -996,3 +996,12 @@ main {
         margin-top: 15rem;
     }
 }
+
+
+#current {
+    color: var(--clr-quaternary);
+}
+
+#current::after {
+    opacity: 1;
+}
